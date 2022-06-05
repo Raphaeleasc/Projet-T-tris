@@ -323,12 +323,10 @@ int verifili(int ** sd,int*lim, int score){   //v�rification ligne et gestion 
 				for(c = 0;c<TAILLE;c++){
 					*(*(sd+TAILLE-1)+c)= 0;
 					*(lim+c) =*(lim+c)-1;
-					//printf("merde");
 					while(*(lim+c) != 0 && *(*(sd+*(lim+c)-1)+c) == 0 ){
                         *(lim+c) = *(lim+c)-1;}
 
 					}
-                //printf("pute");
                 i=i-1;
                 ligne = ligne+1;
               //printf("arret");
